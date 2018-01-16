@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="data.js"> </script>
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+
+    </style>
+
+    <div class="moviePlayer">
+      <div class="containerNavBar">
+        <div id="progressBar">
+          <div id="myBar"></div>
+        </div>
+        <nav class="navBar">
+          <div id="time"></div>
+          <div id="one"><img src="./icon/tensec.png" id="before"> </div>
+          <div id="two"><img src="./icon/play-1.png" id="play"> </div>
+          <div id="three"><img src="./icon/10secmore-1.png" id="after"> </div>
+          <div id="four"><img src="./icon/stop.png" id="stop"> </div>
+          <div id="five">
+            <img src="./icon/sound-1.png" id="sound">
+            <div class="range_zone"></div>
+            <input type="range" orient="vertical" min="1" max="100" class="slider" id="myRange">
+          </div>
+          <div id="six"><img src="./icon/fullscreen.png" id="fullScreen"></div>
+        </nav>
+      </div>
+      <div id="progressBar2">
+        <div id="myBar2"></div>
+      </div>
+      <video id="movie"></video>
+    </div>
+
+    <script src="videoPlayer.js"></script>
+</body>
+</html>
